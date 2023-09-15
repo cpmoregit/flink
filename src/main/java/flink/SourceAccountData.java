@@ -22,9 +22,7 @@ public class SourceAccountData {
    //     final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
         
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-        
-        String csvData= 
-        		"\"id\",\"name\",\"city\"\\n 1, \"John\",\"SJ\"\\n 2,\"Steve\",\"LA\"\\n 3, \"Jack\",\"MI\"";
+
         
         CsvReaderFormat<SourceAccount> csvFormat = CsvReaderFormat.forPojo(SourceAccount.class);
         
